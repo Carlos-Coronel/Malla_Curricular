@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  text-align: center;
+  padding: 15px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* Estilos para la malla curricular */
+.row {
+  flex-wrap: wrap;
+  display: flex;
+  grid-template-columns: repeat(10, minmax(50px, 1fr));
+  grid-gap: 20px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.ContRow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  grid-gap: 20px;
+  max-width: 20%;
+  margin-bottom: 20px;
+  pointer-events: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.9s;
+}
+
+
+<<<<<<< HEAD:estilos.css
+.card:hover:before {
+  transform: translateY(0%);
+}
+
+.card h5 {
+  font-size: 15px;
+=======
+.card h4 {
+  font-size: 8px;
+>>>>>>> ad6f0951b8ec7cd8554a71629cab1985d8696adc:frondend/estilos.css
+  font-style: italic;
+  text-align: center;
+  color: #000;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.card.red {
+  background-color: #ff5c5c;
+}
+
+.card.yellow {
+  background-color: #ffbb54;
+}
+
+.card.green {
+  background-color: #00C851;
+}
+
+.card.blue {
+  background-color: #0080ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+
+}
+
+.page {
+  background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%)
+}
+
+.page h2 {
+  padding: 85px 0 0 20px;
+}
+
+.page p {
+  padding: 10px 80px;
+  color: #4b4b4b;
+}
+
+.foldtl:before {
+  content: "";
+  border-bottom: 55px solid #eee;
+  border-left: 55px solid transparent;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+.foldtl {
+  position: relative;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+
+@media screen and (max-width: 868px) {
+  .row {
+    grid-template-columns: repeat(6, minmax(100px, 100px));
+  }
+
+  .ContRow {
+    grid-template-columns: repeat(2, minmax(100px, 100px));
+  }
+}
+
+@media screen and (max-width: 634px) {
+  .row {
+    grid-template-columns: repeat(4, minmax(100px, 100px));
+  }
+
+  .hide {
+    
+    display: block;
+  }
+
+  .show{
+   
+    display: none;
+  }
+}
+
+
+.card .tooltip {
+  visibility: hidden;
+  position: absolute;
+  width: 140px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  text-align: center;
+}
+
+
+
+
+.card .tooltip:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 10px solid #ccc;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+}
+
+
+.card:hover .tooltip {
+  visibility: visible;
+
+}
