@@ -34,9 +34,9 @@ h1 {
 
 .ContRow {
   display: grid;
-  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
   grid-gap: 20px;
-  max-width: 20%;
+  max-width: 50%;
   margin-bottom: 20px;
   pointer-events: none;
 }
@@ -62,7 +62,7 @@ h1 {
 
 
 .card h4 {
-  font-size: 8px;
+  font-size: 13px;
   font-style: italic;
   text-align: center;
   color: #000;
@@ -97,7 +97,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
 
 }
 
@@ -124,24 +124,6 @@ a {
 .foldtl {
   position: relative;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
-}
-
-
-@media screen and (max-width: 868px) {
-  .row {
-    grid-template-columns: repeat(6, minmax(100px, 100px));
-  }
-
-  .ContRow {
-    grid-template-columns: repeat(2, minmax(100px, 100px));
-  }
-}
-
-@media screen and (max-width: 634px) {
-  .row {
-    grid-template-columns: repeat(4, minmax(100px, 100px));
-  }
-
 }
 
 
@@ -179,5 +161,32 @@ a {
 
 .card:hover .tooltip {
   visibility: visible;
+
+}
+
+
+
+@media screen and (max-width: 868px) {
+  .row {
+    grid-template-columns: repeat(6, minmax(100px, 100px));
+  }
+
+  .ContRow {
+    grid-template-columns: repeat(2, minmax(100px, 100px));
+  }
+}
+
+@media screen and (max-width: 634px) {
+  .row {
+    grid-template-columns: repeat(4, minmax(100px, 100px));
+  }
+
+}
+
+
+@media screen and (max-width: 404px) {
+  .row {
+    grid-template-columns: repeat(4, minmax(100px, 100px));
+  }
 
 }

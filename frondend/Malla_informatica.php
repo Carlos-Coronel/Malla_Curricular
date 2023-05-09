@@ -5,6 +5,7 @@
     <title>Malla Curricular de la Universidad </title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.2">
 </head>
 
 <body>
@@ -35,13 +36,6 @@
                         <h4>CO: COMPLEMENTOS DE LA FORMACION</h4>
                     </a>
                 </div>
-            </div>
-            <div class="Row">
-                <img src="./Logo.png" alt="Descripción de la imagen derecha">
-            </div>
-            <div class="page foldtl">
-                <h2>Trabajo Realizado Por:</h2>
-                <p>Carlos Jein Coronel Rojas</p>
             </div>
         </div>
     </header>
@@ -540,7 +534,7 @@
             </div>
 
         </div>
-        
+
         <div class="semestres">
             <h2>Quinto semestre</h2>
         </div>
@@ -1189,8 +1183,15 @@
                 </div>
             </div>
 
+
+
         </div>
-  
+        <div class="container-img">
+            <div class="page foldtl">
+                <h2>Trabajo Realizado Por:</h2>
+                <p>Carlos Jein Coronel Rojas</p>
+            </div>
+        </div>
     </div>
 </body>
 
