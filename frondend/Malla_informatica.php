@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Malla Curricular de la Universidad del Futuro</title>
+    <title>Malla Curricular de la Universidad </title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <meta charset="UTF-8">
 </head>
@@ -13,8 +13,44 @@
     ?>
     <header>
         <h1>Malla Curricular Informatica 2010</h1>
+        <div class="container-img">
+            <div class="ContRow">
+                <div class="card red">
+                    <a href="#">
+                        <h4>CI: CIENCIAS DE LA INGENIERIA</h4>
+                    </a>
+                </div>
+                <div class="card yellow">
+                    <a href="#">
+                        <h4>CB: CIENCIAS BASICAS</h4>
+                    </a>
+                </div>
+                <div class="card blue">
+                    <a href="#">
+                        <h4>AI: APLICACIONES DE LA INGENIERIA</h4>
+                    </a>
+                </div>
+                <div class="card green">
+                    <a href="#">
+                        <h4>CO: COMPLEMENTOS DE LA FORMACION</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="Row">
+                <img src="./Logo.png" alt="Descripción de la imagen derecha">
+            </div>
+            <div class="page foldtl">
+                <h2>Trabajo Realizado Por:</h2>
+                <p>Carlos Jein Coronel Rojas</p>
+            </div>
+        </div>
     </header>
     <div class="container">
+
+        <div class="semestres">
+            <h2>Primer semestre</h2>
+        </div>
+
         <div class="row">
             <div class="card yellow">
                 <a href="/PW/backend/mostrar.php?idmaterias=5">
@@ -143,6 +179,9 @@
             </div>
 
         </div>
+        <div class="semestres">
+            <h2>Segundo semestre</h2>
+        </div>
         <div class="row">
             <div class="card red">
                 <a href="/PW/backend/mostrar.php?idmaterias=13">
@@ -255,6 +294,9 @@
                 </div>
             </div>
 
+        </div>
+        <div class="semestres">
+            <h2>Tercer semestre</h2>
         </div>
         <div class="row">
             <div class="card green">
@@ -372,6 +414,10 @@
                     </span>
                 </div>
             </div>
+        </div>
+
+        <div class="semestres">
+            <h2>Cuarto semestre</h2>
         </div>
 
         <div class="row">
@@ -494,6 +540,11 @@
             </div>
 
         </div>
+        
+        <div class="semestres">
+            <h2>Quinto semestre</h2>
+        </div>
+
         <div class="row">
 
             <div class="card blue">
@@ -613,6 +664,9 @@
                 </div>
             </div>
 
+        </div>
+        <div class="semestres">
+            <h2>Sexto semestre</h2>
         </div>
         <div class="row">
 
@@ -735,6 +789,9 @@
             </div>
 
         </div>
+        <div class="semestres">
+            <h2>Septimo semestre</h2>
+        </div>
         <div class="row">
 
             <div class="card blue">
@@ -842,6 +899,9 @@
             </div>
 
         </div>
+        <div class="semestres">
+            <h2>Octavo semestre</h2>
+        </div>
         <div class="row">
 
             <div class="card green">
@@ -948,7 +1008,9 @@
                 </div>
             </div>
         </div>
-
+        <div class="semestres">
+            <h2>Noveno semestre</h2>
+        </div>
         <div class="row">
             <div class="card green">
                 <a href="/PW/backend/mostrar.php?idmaterias=77">
@@ -1043,6 +1105,9 @@
 
         </div>
 
+        <div class="semestres">
+            <h2>Decimo semestre</h2>
+        </div>
         <div class="row">
 
             <div class="card blue">
@@ -1125,38 +1190,7 @@
             </div>
 
         </div>
-        <br><br>
-        <div class="container-img">
-            <div class="ContRow">
-                <div class="card red">
-                    <a href="#">
-                        <h4>CI: CIENCIAS DE LA INGENIERIA</h4>
-                    </a>
-                </div>
-                <div class="card yellow">
-                    <a href="#">
-                        <h4>CB: CIENCIAS BASICAS</h4>
-                    </a>
-                </div>
-                <div class="card blue">
-                    <a href="#">
-                        <h4>AI: APLICACIONES DE LA INGENIERIA</h4>
-                    </a>
-                </div>
-                <div class="card green">
-                    <a href="#">
-                        <h4>CO: COMPLEMENTOS DE LA FORMACION</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="Row">
-                <img src="./logo2.jpg" alt="Descripción de la imagen derecha">
-            </div>
-            <div class="page foldtl">
-                <h2>Trabajo Realizado Por:</h2>
-                <p>Carlos Jein Coronel Rojas</p>
-            </div>
-        </div>
+  
     </div>
 </body>
 
