@@ -53,25 +53,10 @@ h1 {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.9s;
-  overflow: hidden;
 }
 
-.card:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-color: #f2f2f2;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
-}
 
-.card:hover:before {
-  transform: translateY(0%);
-}
-
-.card h5 {
+.card h4 {
   font-size: 8px;
   font-style: italic;
   text-align: center;
@@ -112,11 +97,13 @@ a {
 }
 
 .page {
-  background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%)
+  background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%)
 }
+
 .page h2 {
   padding: 85px 0 0 20px;
 }
+
 .page p {
   padding: 10px 80px;
   color: #4b4b4b;
@@ -126,12 +113,12 @@ a {
   content: "";
   border-bottom: 55px solid #eee;
   border-left: 55px solid transparent;
-  box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
 }
 
 .foldtl {
   position: relative;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
 
@@ -149,5 +136,43 @@ a {
   .row {
     grid-template-columns: repeat(4, minmax(100px, 100px));
   }
+
+}
+
+
+.card .tooltip {
+  visibility: hidden;
+  position: absolute;
+  width: 140px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  text-align: center;
+}
+
+
+
+
+.card .tooltip:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 10px solid #ccc;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+}
+
+
+.card:hover .tooltip {
+  visibility: visible;
 
 }
