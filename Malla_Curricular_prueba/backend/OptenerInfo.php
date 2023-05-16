@@ -16,7 +16,6 @@ function obtenerInformacionMateria($id) {
     $html .= '<h4>Semestre: ' . $materia['semestre'] . '</h4>';
     $html .= '<h4>Docente: ' . $materia['docente'].'</h4>';
     $html .= '</p>';
-  
     return $html;
   } catch (Exception $e) {
     echo 'Excepción capturada: ',  $e->getMessage(), "\n";

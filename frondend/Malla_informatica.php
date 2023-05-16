@@ -6,6 +6,18 @@
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.2">
+    <script>
+        function toggleColor(color) {
+            var buttons = document.getElementsByClassName('card');
+            for (var i = 0; i < buttons.length; i++) {
+                if (buttons[i].classList.contains(color)) {
+                    buttons[i].classList.toggle('active');
+                } else {
+                    buttons[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -16,26 +28,53 @@
         <h1>Malla Curricular Informatica 2010</h1>
         <div class="container-img">
             <div class="ContRow">
-                <div class="card red">
-                    <a href="#">
-                        <h4>CI: CIENCIAS DE LA INGENIERIA</h4>
-                    </a>
-                </div>
-                <div class="card yellow">
-                    <a href="#">
-                        <h4>CB: CIENCIAS BASICAS</h4>
-                    </a>
-                </div>
-                <div class="card blue">
-                    <a href="#">
-                        <h4>AI: APLICACIONES DE LA INGENIERIA</h4>
-                    </a>
-                </div>
-                <div class="card green">
-                    <a href="#">
-                        <h4>CO: COMPLEMENTOS DE LA FORMACION</h4>
-                    </a>
-                </div>
+                <button class="card red" onclick="toggleColor('red')">
+                    <h4>CI: CIENCIAS DE LA INGENIERIA</h4>
+                    <div class="tooltip">
+                        <span class="tooltiptext ">
+                            <p>
+                                <?php echo obtenerInformacionCategoria(1); ?>
+                            </p>
+                        </span>
+                    </div>
+                </button>
+                <button class="card yellow" onclick="toggleColor('yellow')">
+                    <h4>CB: CIENCIAS BASICAS</h4>
+                    <div class="tooltip">
+                        <span class="tooltiptext ">
+                            <p>
+                                <?php echo obtenerInformacionCategoria(2); ?>
+                            </p>
+                        </span>
+                    </div>
+                </button>
+                <button class="card blue" onclick="toggleColor('blue')">
+                    <h4>AI: APLICACIONES DE LA INGENIERIA</h4>
+                    <div class="tooltip">
+                        <span class="tooltiptext ">
+                            <p>
+                                <?php echo obtenerInformacionCategoria(3); ?>
+                            </p>
+                        </span>
+                    </div>
+                </button>
+                <button class="card green" onclick="toggleColor('green')">
+                    <h4>CO: COMPLEMENTOS DE LA FORMACION</h4>
+                    <div class="tooltip">
+                        <span class="tooltiptext ">
+                            <p>
+                                <?php echo obtenerInformacionCategoria(4); ?>
+                            </p>
+                        </span>
+                    </div>
+                </button>
+            </div>
+            <div class="Row">
+                <img src="./Logo.png" alt="Descripción de la imagen derecha">
+            </div>
+            <div class="page foldtl">
+                <h2>Trabajo Realizado Por:</h2>
+                <p>Carlos Jein Coronel Rojas</p>
             </div>
         </div>
     </header>
@@ -1181,15 +1220,6 @@
                         </p>
                     </span>
                 </div>
-            </div>
-
-
-
-        </div>
-        <div class="container-img">
-            <div class="page foldtl">
-                <h2>Trabajo Realizado Por:</h2>
-                <p>Carlos Jein Coronel Rojas</p>
             </div>
         </div>
     </div>
