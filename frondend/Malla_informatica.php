@@ -3,6 +3,8 @@
 
 <head>
     <title>Malla Curricular de la Universidad </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.2">
@@ -12,6 +14,15 @@
     <?php
     include '../backend/OptenerInfo.php';
     ?>
+     <nav class="navbar">
+        <div class="contenedor">
+            <a href="http://www.fctunca.edu.py"><img src="Logo.png" alt="Facultad de Cienias y Tecnologias"></a>
+            <a href="http://www.fctunca.edu.py/carreras/informatica">Ingeniería Informática</a>
+            <a href="http://www.fctunca.edu.py/carreras/electronica">Ingeniería Electrónica</a>
+            <a href="http://www.fctunca.edu.py/carreras/electrica">Ingeniería en Electricidad</a>
+            <a href="http://www.fctunca.edu.py/carreras/civil">Ingeniería Civil</a>
+        </div>
+    </nav>
     <header>
         <h1>Malla Curricular Informatica 2010</h1>
         <div class="container-img">

@@ -3,6 +3,44 @@
   margin: 0;
 }
 
+/* * ============================== */
+/* * ============ HEADER ========== */
+/* * ============================== */
+
+.navbar {
+	background: #007be0;
+}
+
+.navbar a {
+	color: #fff;
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	transition: .3s ease-out all;
+}
+.navbar-logo{
+  display: inline-block;
+  width: 6em; /*El tamaño en que desees*/
+  filter: brightness(100); /*<-- Este ignoralo, lo puse porque la imagen no resaltaba sobre fondo negro*/ 
+  margin: -.5em auto; /*<-- Este es para cancelar el espacio entre la barra de navegación y la imagen*/
+  vertical-align: middle;
+}
+.navbar a:hover {
+	background: #1D2F3D;
+	color: #fff;
+	text-decoration: none;
+}
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
 header {
   background-color: #333;
   padding: 15px;
@@ -165,7 +203,23 @@ a {
 }
 
 
+@media screen and (max-width: 900px) {
+  .navbar .contenedor {
+		flex-wrap: wrap;
+		margin: 0;
+		width: 100%;
+	}
 
+	.navbar a {
+		width: auto;
+		flex: 1;
+	}
+
+	.contenedor-imagen {
+		height: 50vh;
+	}
+
+}
 @media screen and (max-width: 868px) {
   .row {
     grid-template-columns: repeat(6, minmax(100px, 100px));
