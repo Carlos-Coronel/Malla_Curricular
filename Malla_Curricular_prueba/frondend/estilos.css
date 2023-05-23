@@ -76,7 +76,7 @@ h1 {
 >>>>>>> ad6f0951b8ec7cd8554a71629cab1985d8696adc:frondend/estilos.css
   font-style: italic;
   text-align: center;
-  color: #000;
+  color: (0,0,1);
 }
 
 .card:hover {
