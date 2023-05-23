@@ -3,60 +3,51 @@
   margin: 0;
 }
 
-/* * ============================== */
-/* * ============ HEADER ========== */
-/* * ============================== */
-
-.navbar {
-	background: #007be0;
-}
-
-.navbar a {
-	color: #fff;
-	display: inline-block;
-	padding: 20px;
-	width: 100%;
-	text-align: center;
-	color: #000;
-	transition: .3s ease-out all;
-}
-.navbar-logo{
-  display: inline-block;
-  width: 6em; /*El tamaño en que desees*/
-  filter: brightness(100); /*<-- Este ignoralo, lo puse porque la imagen no resaltaba sobre fondo negro*/ 
-  margin: -.5em auto; /*<-- Este es para cancelar el espacio entre la barra de navegación y la imagen*/
-  vertical-align: middle;
-}
-.navbar a:hover {
-	background: #1D2F3D;
-	color: #fff;
-	text-decoration: none;
-}
-
-.contenedor {
-	max-width: 1000px;
-	width: 90%;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-}
-
-header {
-  background-color: #333;
-  padding: 15px;
-}
-
 body {
   font-family: Arial, sans-serif;
 }
 
+/* * ============================== */
+/* * ============ HEADER ========== */
+/* * ============================== */
+
+
+header {
+  background: #3069b1;
+}
+
+.navbar a {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  background: #1D2F3D;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ccc;
+}
+
+.bg-custom {
+  background: #2b2b2b;
+}
+
+
 .container {
   max-width: 95%;
-  margin: 0 auto;
   padding: 20px;
 }
 
 h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+h3 {
   text-align: center;
   margin-bottom: 40px;
   color: white;
@@ -72,10 +63,11 @@ h1 {
 
 .ContRow {
   display: grid;
-  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  grid-template-columns: repeat(5, minmax(120px, 120px));
   grid-gap: 20px;
-  max-width: 20%;
   margin-bottom: 20px;
+  max-width: 38%;
+
 }
 
 .semestres {
@@ -143,8 +135,18 @@ a {
 
 }
 
+.container-page {
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+  gap: 100px;
+
+}
+
 .page {
-  background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%)
+  background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+  width: 500px;
+  height: 300px;
 }
 
 .page h2 {
@@ -152,7 +154,7 @@ a {
 }
 
 .page p {
-  padding: 10px 80px;
+  padding: 1px 12px;
   color: #4b4b4b;
 }
 
@@ -167,31 +169,6 @@ a {
   position: relative;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
 }
-
-@media screen and (max-width: 1240px) {
-  .row {
-    grid-template-columns: repeat(9, minmax(100px, 100px));
-  }
-
-}
-
-@media screen and (max-width: 868px) {
-  .row {
-    grid-template-columns: repeat(6, minmax(100px, 100px));
-  }
-
-  .ContRow {
-    grid-template-columns: repeat(2, minmax(100px, 100px));
-  }
-}
-
-@media screen and (max-width: 634px) {
-  .row {
-    grid-template-columns: repeat(4, minmax(100px, 100px));
-  }
-
-}
-
 
 .card .tooltip {
   visibility: hidden;
@@ -208,9 +185,6 @@ a {
   z-index: 1;
   text-align: center;
 }
-
-
-
 
 .card .tooltip:before {
   content: "";
@@ -231,31 +205,28 @@ a {
 }
 
 
-@media screen and (max-width: 900px) {
-  .navbar .contenedor {
-		flex-wrap: wrap;
-		margin: 0;
-		width: 100%;
-	}
+@media screen and (max-width: 1290px) {
 
-	.navbar a {
-		width: auto;
-		flex: 1;
-	}
-
-	.contenedor-imagen {
-		height: 50vh;
-	}
-
+  .ContRow {
+    grid-template-columns: repeat(4, minmax(120px, 120px));
+    max-width: 90%;
+  }
 }
+
+
+@media screen and (max-width: 1240px) {
+  .row {
+    grid-template-columns: repeat(9, minmax(100px, 100px));
+  }
+}
+
+
+
 @media screen and (max-width: 868px) {
   .row {
     grid-template-columns: repeat(6, minmax(100px, 100px));
   }
 
-  .ContRow {
-    grid-template-columns: repeat(2, minmax(100px, 100px));
-  }
 }
 
 @media screen and (max-width: 634px) {
@@ -263,12 +234,26 @@ a {
     grid-template-columns: repeat(4, minmax(100px, 100px));
   }
 
+  .ContRow {
+    grid-template-columns: repeat(4, minmax(120px, 120px));
+    max-width: 100%;
+  }
 }
 
-
-@media screen and (max-width: 404px) {
-  .row {
+@media screen and (max-width: 400px) {
+  .ContRow {
     grid-template-columns: repeat(4, minmax(100px, 100px));
   }
 
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 700px) {
+  header {
+    width: 100vh;
+  }
+
+  .navbar {
+    width: 100vh;
+  }
 }

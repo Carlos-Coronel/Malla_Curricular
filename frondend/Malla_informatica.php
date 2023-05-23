@@ -2,11 +2,15 @@
 <html>
 
 <head>
+<<<<<<< HEAD
     <title>Malla Informática </title>
+=======
+    <title>Malla informarica </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+>>>>>>> a8c1beaebfba89cf8ea3d2547b54a666aff8ab42
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="estilos.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -23,13 +27,19 @@
             }
         }
     </script>
-</head>  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+</head>
+
+<body>
+    <?php
+    include '../backend/OptenerInfo.php';
+    ?>
+    <nav class="navbar navbar-light bg-custom">
         <div class="container">
-            <a class="navbar-brand" href="http://www.fctunca.edu.py"><img src="Logo.png" alt="Facultad de Cienias y Tecnologias"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="FCyT_web2.png" alt="Facultad de Ciencias y Tecnologías">
+            <button class="navbar-toggler show" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="http://www.fctunca.edu.py/carreras/informatica">Ingeniería Informática</a>
@@ -44,66 +54,60 @@
                         <a class="nav-link" href="http://www.fctunca.edu.py/carreras/civil">Ingeniería Civil</a>
                     </li>
                 </ul>
+                <div class="navbar-collapse mt-4">
+                    <div class="container-img">
+                        <div class="ContRow">
+                            <button class="card red" onclick="toggleColor('red')">
+                                <h4>CI: CIENCIAS DE LA INGENIERIA</h4>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">
+                                        <p>
+                                            <?php echo obtenerInformacionCategoria(1); ?>
+                                        </p>
+                                    </span>
+                                </div>
+                            </button>
+                            <button class="card yellow" onclick="toggleColor('yellow')">
+                                <h4>CB: CIENCIAS BASICAS</h4>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">
+                                        <p>
+                                            <?php echo obtenerInformacionCategoria(2); ?>
+                                        </p>
+                                    </span>
+                                </div>
+                            </button>
+                            <button class="card blue" onclick="toggleColor('blue')">
+                                <h4>AI: APLICACIONES DE LA INGENIERIA</h4>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">
+                                        <p>
+                                            <?php echo obtenerInformacionCategoria(3); ?>
+                                        </p>
+                                    </span>
+                                </div>
+                            </button>
+                            <button class="card green" onclick="toggleColor('green')">
+                                <h4>CO: COMPLEMENTOS DE LA FORMACION</h4>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">
+                                        <p>
+                                            <?php echo obtenerInformacionCategoria(4); ?>
+                                        </p>
+                                    </span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
-    <script>
-alert("Bienvenido a nuestra malla curricular!!\nAquí podrá ver las materias correspondientes a cada carrera, solo debe colocar el mouse sobre la materia y vera un resumen\nPara ver el documento completo, solo haga click en la materia\nGracias");
-</script>
+
     <header>
-        <h1>Malla Curricular Informatica 2010</h1>
-        <div class="container-img">
-            <div class="ContRow">
-                <button class="card red" onclick="toggleColor('red')">
-                    <h4>CI: CIENCIAS DE LA INGENIERIA</h4>
-                    <div class="tooltip">
-                        <span class="tooltiptext ">
-                            <p>
-                                <?php echo obtenerInformacionCategoria(1); ?>
-                            </p>
-                        </span>
-                    </div>
-                </button>
-                <button class="card yellow" onclick="toggleColor('yellow')">
-                    <h4>CB: CIENCIAS BASICAS</h4>
-                    <div class="tooltip">
-                        <span class="tooltiptext ">
-                            <p>
-                                <?php echo obtenerInformacionCategoria(2); ?>
-                            </p>
-                        </span>
-                    </div>
-                </button>
-                <button class="card blue" onclick="toggleColor('blue')">
-                    <h4>AI: APLICACIONES DE LA INGENIERIA</h4>
-                    <div class="tooltip">
-                        <span class="tooltiptext ">
-                            <p>
-                                <?php echo obtenerInformacionCategoria(3); ?>
-                            </p>
-                        </span>
-                    </div>
-                </button>
-                <button class="card green" onclick="toggleColor('green')">
-                    <h4>CO: COMPLEMENTOS DE LA FORMACION</h4>
-                    <div class="tooltip">
-                        <span class="tooltiptext ">
-                            <p>
-                                <?php echo obtenerInformacionCategoria(4); ?>
-                            </p>
-                        </span>
-                    </div>
-                </button>
-            </div>
-            <div class="Row">
-                <img src="./Logo.png" alt="Descripción de la imagen derecha">
-            </div>
-            <div class="page foldtl">
-                <h2>Trabajo Realizado Por:</h2>
-                <p>Carlos Jein Coronel Rojas</p>
-            </div>
-        </div>
+        <h3>Malla Curricular Informatica</h3> 
     </header>
+
     <div class="container">
 
         <div class="semestres">
@@ -1248,8 +1252,15 @@ alert("Bienvenido a nuestra malla curricular!!\nAquí podrá ver las materias co
                 </div>
             </div>
         </div>
+        <div class="container-page">
+            <div class="page foldtl">
+                <h2>Trabajo Realizado Por:</h2>
+                <p>Carlos Jein Coronel Rojas</p>
+                <p>Fabrizio Benjamin Villar Ferreira</p>
+                <p>Roberto Carlos Saucedo</p>
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>
