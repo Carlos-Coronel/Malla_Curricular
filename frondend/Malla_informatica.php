@@ -47,6 +47,9 @@
             </div>
         </div>
     </nav>
+    <script>
+alert("Bienvenido a nuestra malla curricular!!\nAquí podrá ver las materias correspondientes a cada carrera, solo debe colocar el mouse sobre la materia y vera un resumen\nPara ver el documento completo, solo haga click en la materia\nGracias");
+</script>
     <header>
         <h1>Malla Curricular Informatica 2010</h1>
         <div class="container-img">
@@ -1246,6 +1249,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
