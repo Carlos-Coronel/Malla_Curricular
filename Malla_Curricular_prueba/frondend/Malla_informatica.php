@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Malla Curricular de la Universidad del Futuro</title>
+    <title>Malla informarica </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <meta charset="UTF-8">
-</head>
-
-<body>
-    <?php
-    include '../backend/OptenerInfo.php';
-    ?>
-    <header>
-        <h1>Malla Curricular Informatica 2010</h1>
-    </header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        function toggleColor(color) {
+            var buttons = document.getElementsByClassName('card');
+            for (var i = 0; i < buttons.length; i++) {
+                if (buttons[i].classList.contains(color)) {
+                    buttons[i].classList.toggle('active');
+                } else {
+                    buttons[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+</head>  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="http://www.fctunca.edu.py"><img src="Logo.png" alt="Facultad de Cienias y Tecnologias"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.fctunca.edu.py/carreras/informatica">Ingeniería Informática</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.fctunca.edu.py/carreras/electronica">Ingeniería Electrónica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.fctunca.edu.py/carreras/electricidad">Ingeniería en Electricidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.fctunca.edu.py/carreras/civil">Ingeniería Civil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <div class="row">
             <div class="card yellow">
