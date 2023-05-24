@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="#" />  
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/frondend/bootstrap4/css/bootstrap.min.css">	
-    <link rel="stylesheet" href="..plugins/sweetAlert2/sweetalert2.min.css">  
+    <link rel="stylesheet" href="../plugins/sweetAlert2/sweetalert2.min.css">  
     <link rel="stylesheet" href="/frondend/plugins/animate.css/animate.css">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
