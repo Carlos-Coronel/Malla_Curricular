@@ -47,7 +47,20 @@
     <script src="/frondend/bootstrap4/js/bootstrap.min.js"></script>
     <script src="/frondend/plugins/sweetAlert2/sweetalert2.all.min.js"></script>
       
-    <script src="codigo.js"></script> 
+    <script>$("#btn").click(function(){
+      Swal.fire({
+        imageUrl: 'img/servicios.gif',
+          imageHeight: 412,
+          imageAlt: 'A tall image',
+          title: 'Bienvenido!!',
+          text: 'Aquí podrá ver las materias correspondientes a cada carrera, solo debe colocar el mouse sobre la materia y vera un resumen del mismo.\nPara ver el documento completo, solo haga click en la materia.\nGracias!',
+          
+          animation: false,
+          customClass: {
+          popup: 'animated bounceIn'
+      }
+      });
+  });	</script> 	  
     
     <nav class="navbar navbar-light bg-custom">
         <div class="container">
