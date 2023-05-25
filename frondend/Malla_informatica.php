@@ -15,9 +15,9 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="#" />  
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/frondend/bootstrap4/css/bootstrap.min.css">	
-    <link rel="stylesheet" href="../plugins/sweetAlert2/sweetalert2.min.css">  
-    <link rel="stylesheet" href="/frondend/plugins/animate.css/animate.css">  
+    <link rel="stylesheet" href="../frondend/bootstrap4/css/bootstrap.min.css">	
+    <link rel="stylesheet" href="../frondend/plugins/sweetAlert2/sweetalert2.min.css">  
+    <link rel="stylesheet" href="../frondend/plugins/animate.css/animate.css">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -37,19 +37,19 @@
 
 <body>
     <?php
-    include '../backend/OptenerInfo.php';
+    include './backend/OptenerInfo.php';
     ?>
     <div class="col-lg-3">
             <button id="btn" class="btn btn-outline-primary btn-lg btn-block">Ayuda</button>
         </div>
-     <script src="/frondend/jquery/jquery-3.3.1.min.js"></script>	 	
-    <script src="/frondend/popper/popper.min.js"></script>	 	 	
-    <script src="/frondend/bootstrap4/js/bootstrap.min.js"></script>
-    <script src="/frondend/plugins/sweetAlert2/sweetalert2.all.min.js"></script>
+     <script src="../frondend/jquery/jquery-3.3.1.min.js"></script>	 	
+    <script src="../frondend/popper/popper.min.js"></script>	 	 	
+    <script src="../frondend/bootstrap4/js/bootstrap.min.js"></script>
+    <script src="../frondend/plugins/sweetAlert2/sweetalert2.all.min.js"></script>
       
     <script>$("#btn").click(function(){
       Swal.fire({
-        imageUrl: 'img/servicios.gif',
+        imageUrl: '../frondend/img/servicios.gif',
           imageHeight: 412,
           imageAlt: 'A tall image',
           title: 'Bienvenido!!',
@@ -60,7 +60,7 @@
           popup: 'animated bounceIn'
       }
       });
-  });	</script> 	  
+  });</script> 	  
     
     <nav class="navbar navbar-light bg-custom">
         <div class="container">

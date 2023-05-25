@@ -1,7 +1,7 @@
 
 $("#btn").click(function(){
     Swal.fire({
-      imageUrl: '/frondend/img/servicios.gif',
+      imageUrl: 'img/servicios.gif',
         imageHeight: 412,
         imageAlt: 'A tall image',
         title: 'Bienvenido!!',
